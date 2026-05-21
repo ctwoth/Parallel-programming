@@ -64,11 +64,11 @@ void gen_matrix(FILE* f, int dim, int min, int len) {
 
 ### Пример работы:
 
-![](work.jpg)
+![](images/work.jpg)
 
 ## Файл с матрицей:
 
-![](images\matrix.jpg)
+![](images/matrix.jpg)
 
 ## Запуск
 
