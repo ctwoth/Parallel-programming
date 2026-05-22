@@ -1,4 +1,4 @@
-﻿#include<stdio.h>
+#include<stdio.h>
 #include<vector>
 #include<string.h>
 #include<chrono>
@@ -55,14 +55,14 @@ void load_matrix(Matrix& matr, const char* path) {
 }
 
 Matrix multiply(Matrix& matr1, Matrix& matr2) {
-    Matrix rez;
     size_t dim = matr1.size();
+    Matrix rez(dim);
 
     for (size_t i = 0; i < dim; ++i) {
-        rez.push_back(vector<int>());
+        rez[i] = vector<int>(dim);
 
         for (size_t j = 0; j < dim; ++j) {
-            rez[i].push_back(0);
+            rez[i][j] = 0;
             for (size_t k = 0; k < dim; ++k) {
                 rez[i][j] += matr1[i][k] * matr2[k][j];
             }
@@ -116,7 +116,7 @@ int main() {
         print_matrix(rez);
         printf("\n");
     }
-    printf("\Multiplying time: %lf miliseconds\n\n", chrono::duration<double>(end - start).count());
+    printf("\Multiplying time: %lf seconds\n\n", chrono::duration<double>(end - start).count());
 
     getchar(); // '\n' rest in buffer
     printf("Save result matrix? [type 'y' for yes]: ");
