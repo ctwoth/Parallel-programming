@@ -73,7 +73,7 @@
 Программа пусть и написана на C++, однако имеет расширение **.cu** и компилируется с помощью NVCC из CUDA Toolkit:
 
 **nvcc matr_cuda.cu -o matr_cuda.exe**
-**lab4_cuda.exe**
+**matr_cuda.exe**
 
 ---
 
