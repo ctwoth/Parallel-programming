@@ -1,0 +1,15 @@
+whoami: cannot find name for user ID 1121076726
+Size: 200 x 200
+  Average time: 0.00311335 sec
+Size: 400 x 400
+  Average time: 0.0196621 sec
+Size: 800 x 800
+  Average time: 0.146824 sec
+Size: 1200 x 1200
+  Average time: 0.493082 sec
+Size: 1600 x 1600
+  Average time: 1.08904 sec
+Size: 2000 x 2000
+  Average time: 2.10675 sec
+
+Done.
